@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Sistema de Nomeação</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .jumbotron {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 30px 20px;
+            margin-bottom: 0;
+        }
+        .card {
+            margin: 20px 0;
+        }
+        .nav-link {
+            color: #ffffff !important;
+        }
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sistema de Nomeação</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="listar_cargos.php"><i class="fas fa-briefcase"></i> Cargos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="listar_convocados.php"><i class="fas fa-user"></i> Candidatos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gerar_convocacao.php"><i class="fas fa-list"></i> Convocações</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Bem-vindo ao Sistema de Nomeação</h1>
+        <p class="lead">Gerencie de forma eficiente os concursos públicos e suas nomeações.</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-briefcase"></i> Cargos</h5>
+                        <p class="card-text">Gerencie os cargos disponíveis para os concursos.</p>
+                        <a href="listar_cargos.php" class="btn btn-primary">Ver Cargos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-user"></i> Candidatos</h5>
+                        <p class="card-text">Visualize e edite informações dos candidatos.</p>
+                        <a href="listar_convocados.php" class="btn btn-primary">Ver Candidatos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-list"></i> Convocações</h5>
+                        <p class="card-text">Crie e gerencie listas de convocação.</p>
+                        <a href="gerar_convocacao.php" class="btn btn-primary">Ver Convocações</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-user-plus"></i> Adicionar Candidato</h5>
+                        <p class="card-text">Inclua novos candidatos no sistema.</p>
+                        <a href="adicionar_candidato.php" class="btn btn-primary">Adicionar Candidato</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sistema de Nomeação. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
